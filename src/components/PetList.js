@@ -33,7 +33,6 @@ class PetList extends Component{
                 var valueFromFirebase = snapshot.val()
                 //.orderByChild("username").equalTo(this.props.user.username)
                 petData = valueFromFirebase
-                console.log('ownerr',this.props.user);
                 console.log('pet data:',petData);
             })
             .then(function() {
